@@ -18,7 +18,7 @@ const WatchList = () => {
 
   const [allWatchlist,setAllWatchlist]=useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:3002/watchlist").then((res)=>{
+    axios.get("http://51.20.114.111:3002/watchlist").then((res)=>{
       setAllWatchlist(res.data);
     })
   },[]);

@@ -5,7 +5,7 @@ import axios from "axios";
 const Orders = () => {
   const [allOrders,setAllOrders]=useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:3002/orders",{withCredentials:true}).then((res)=>{
+    axios.get("http://51.20.114.111:3002/orders",{withCredentials:true}).then((res)=>{
       setAllOrders(res.data);
     })
   },[])

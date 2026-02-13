@@ -17,7 +17,7 @@ function Navbar() {
       if (isLoggedIn) {
         try {
           const { data } = await axios.post(
-            "http://localhost:3002/api/verify",
+            "http://51.20.114.111:3002/api/verify",
             {},
             { withCredentials: true }
           );

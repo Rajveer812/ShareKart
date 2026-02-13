@@ -33,7 +33,7 @@ const Login = ({ onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:3002/api/login", {
+      const { data } = await axios.post("http://51.20.114.111:3002/api/login", {
         ...inputValue,
       }, { withCredentials: true });
       const { success, message } = data;
