@@ -20,7 +20,7 @@ const Menu = () => {
       if (isLoggedIn) {
         try {
           const { data } = await axios.post(
-            "http://backend:3002/api/verify",
+            "http://localhost:3002/api/verify",
             {},
             { withCredentials: true }
           );

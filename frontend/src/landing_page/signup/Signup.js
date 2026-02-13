@@ -32,7 +32,7 @@ const Signup = ({ isOpen, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const {data} = await axios.post("http://backend:3002/api/signup", {
+      const {data} = await axios.post("http://localhost:3002/api/signup", {
          ...inputValue,
         },
         {withCredentials: true}
